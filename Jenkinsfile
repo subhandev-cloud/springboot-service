@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        maven 'Maven-3'
+    }
+
     environment {
         IMAGE_NAME = "customer-service"
         IMAGE_TAG  = "latest"
